@@ -1,0 +1,10 @@
+[Unit]
+Description=Pisca leds.
+
+[Service]
+Type=simple
+ExecStart=/home/adailsilva/scripts/blink.sh
+ExecStop=/home/adailsilva/scripts/blinkShutdown.sh
+
+[Install]
+WantedBy=multi-user.target
